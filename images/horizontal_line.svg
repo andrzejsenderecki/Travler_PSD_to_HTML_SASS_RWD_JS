@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="3" viewBox="0 0 220 3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dedede;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="305" y="2156" width="220" height="3" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rounded_Rectangle_3" data-name="Rounded Rectangle 3" class="cls-1" d="M306,2156H524a1,1,0,0,1,0,2H306A1,1,0,0,1,306,2156Z" transform="translate(-305 -2156)"/>
+</svg>

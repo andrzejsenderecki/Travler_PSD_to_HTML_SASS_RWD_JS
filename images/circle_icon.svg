@@ -1,0 +1,31 @@
+<svg id="Grupa_4" data-name="Grupa 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="11" viewBox="0 0 27 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8f33c4;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #979797;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="10" height="11" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="17" y="0" width="10" height="11" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle class="cls-1" cx="5" cy="5" r="5"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-2" cx="22" cy="5" r="5"/>
+</svg>

@@ -1,0 +1,29 @@
+@import "../modules/variables";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-logo {
+
+}
+
+.navbar-menu {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 500;
+            color: $nav-font-color;
+            text-decoration: none;
+        }
+    }
+}
