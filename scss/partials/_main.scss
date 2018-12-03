@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
     background: $light_bg-color;
 }
 
-@media (min-width: 740px) {
+@media (min-width: 822px) {
     .page-width {
         height: 120px;
     }

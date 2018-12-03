@@ -7,8 +7,17 @@
 
 .navbar-logo {
     display: flex;
-    flex-direction: column;
-    padding: 40px 0 90px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 5vw 110px 5vw;
+    img {
+        height: 50px;
+    }
+}
+
+.displayToggle {
+    display: none;
 }
 
 .navbar-menu {
@@ -37,7 +46,28 @@
     }
 }
 
-@media (min-width: 740px) {
+.responsive-menu-btn {
+    width: 50px;
+    height: 20px;
+    border: 0;
+    border-top: 7px solid #6017a3;
+    position: relative;
+    transition: 0.3s transform linear;
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 7px solid #6017a3;
+        transform: translateY(8px);
+        transition: 0.3s transform linear;
+    }
+    &:after {
+        transform: translateY(23px);
+    }
+}
+
+@media (min-width: 822px) {
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -45,13 +75,13 @@
 
     .navbar-logo {
         flex-direction: row;
-        padding: 20px 0 0 0;
+        padding: 30px 2vw 110px 2vw;
     }
 
     .navbar-menu {
         display: flex;
         align-items: flex-end;
-
+        padding: 0 2vw 0 0;
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -70,7 +100,7 @@
                         padding: 50px 50px 30px 50px;
                         transition: 0.2s;
                         background: #FFFFFF;
-                        box-shadow: inset 10px -30px 0 -10px;
+                        box-shadow: inset 10px -20px 0 -10px;
                         img {
                             bottom: 60px;
                         }
@@ -82,28 +112,28 @@
 }
 
 .nav-decoration-first {
-    box-shadow: inset 10px -20px 0 -10px #6017a3;
+    box-shadow: inset 10px -15px 0 -10px #6017a3;
     &:hover {
         color: #6017a3;
     }
 }
 
 .nav-decoration-second {
-    box-shadow: inset 10px -20px 0 -10px #701dbb;
+    box-shadow: inset 10px -15px 0 -10px #701dbb;
     &:hover {
         color: #701dbb;
     }
 }
 
 .nav-decoration-third {
-    box-shadow: inset 10px -20px 0 -10px #a34ff0;
+    box-shadow: inset 10px -15px 0 -10px #a34ff0;
     &:hover {
         color: #a34ff0;
     }
 }
 
 .nav-decoration-fourth {
-    box-shadow: inset 10px -20px 0 -10px #8038c2;
+    box-shadow: inset 10px -15px 0 -10px #8038c2;
     &:hover {
         color: #8038c2;
     }
