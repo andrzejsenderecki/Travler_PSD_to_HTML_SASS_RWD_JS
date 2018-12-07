@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-        <title>Travler</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./scripts/out.js"></script>
+        <title>Travler</title>
     </head>
     <body>
         <div class='page-width'>
@@ -30,6 +31,22 @@
                     </ul>
                 </div>
             </nav>
+            <div class="slider">
+                <div class="slides">
+                <i class='prevArrowSlide'></i>
+                <div class="prevSlide"></div>
+                <i class='nextArrowSlide'></i>
+                <div class="nextSlide slides"></div>
+                </div>
+                <ul class="slides">
+                    <li class="sliderVisible">
+                        <img src='./images/slider_70.jpg' />
+                    </li>
+                    <li  class="sliderInvisible">
+                        <img src='./images/slider_with_icon_70.jpg' />
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
