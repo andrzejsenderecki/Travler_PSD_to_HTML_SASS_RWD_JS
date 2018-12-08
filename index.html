@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="./scripts/out.js"></script>
         <title>Travler</title>
     </head>
     <body>
@@ -31,22 +29,31 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+        <div class="page-slide-width">
             <div class="slider">
-                <div class="slides">
-                <i class='prevArrowSlide'></i>
-                <div class="prevSlide"></div>
-                <i class='nextArrowSlide'></i>
-                <div class="nextSlide slides"></div>
+                <div class="prev-slide">
+                    <i class='prev-arrow-slide'></i>
                 </div>
-                <ul class="slides">
-                    <li class="sliderVisible">
-                        <img src='./images/slider_70.jpg' />
+                <div class="next-slide">
+                    <i class='next-arrow-slide'></i>
+                </div>
+                <ul>
+                    <li class="slider-visible">
+                        <img src='./images/slide_1.jpg' />
                     </li>
-                    <li  class="sliderInvisible">
-                        <img src='./images/slider_with_icon_70.jpg' />
+                    <li  class="slider-invisible">
+                        <img src='./images/slide_2.jpg' />
+                    </li>
+                    <li class="slider-invisible">
+                        <img src='./images/slide_3.jpg' />
                     </li>
                 </ul>
+                <div class='slider-icon'>
+                    <img src='./images/slider_icon.svg' />
+                </div>
             </div>
         </div>
     </body>
+    <script src="./scripts/out.js" defer></script>
 </html>

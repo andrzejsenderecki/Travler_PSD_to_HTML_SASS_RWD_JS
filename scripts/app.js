@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuBtnResponsive = document.createElement('div');
     menuBtnResponsive.classList.add('responsive-menu-btn');
     menuBtnResponsive.addEventListener('click', () => {
-        menuSection.classList.toggle('displayToggle');
+        menuSection.classList.toggle('display-toggle');
     });
 
     let menuSection = document.querySelector('.navbar-menu');
@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let checkMobile = () => {
         if (mobile.matches) {
-            menuSection.classList.remove('displayToggle');
+            menuSection.classList.remove('display-toggle');
             let toRemove = document.querySelector('.responsive-menu-btn');
             if(toRemove !== null) {
                 toRemove.parentElement.removeChild(toRemove);
             }
         } else  {
-            menuSection.classList.add('displayToggle');
+            menuSection.classList.add('display-toggle');
             logoSection.appendChild(menuBtnResponsive);
         }
     }
@@ -40,9 +40,24 @@ document.addEventListener("DOMContentLoaded", function () {
     //Slider
 
     let slider = document.querySelectorAll('.slider li');
-    let btnNext = document.querySelector('.nextSlide');
-    console.log(btnNext);
-    let btnPrev = document.querySelector('.prevSlide');
+    let slide = document.querySelector('.slider img');
+    let btnNext = document.querySelector('.next-slide');
+    let btnPrev = document.querySelector('.prev-slide');
+    let prevSlideBtn = document.querySelector('.prev-slide');
+    let nextSlideBtn = document.querySelector('.next-slide');
+    let sliderIcon = document.querySelector('.slider-icon');
+
+    let size = slide.offsetHeight;
+    prevSlideBtn.style.height = `${size}px`;
+    nextSlideBtn.style.height = `${size}px`;
+    sliderIcon.style.height = `${size}px`;
+
+    window.addEventListener("resize", () => {
+        let newSize = slide.offsetHeight;
+        prevSlideBtn.style.height = `${newSize}px`;
+        nextSlideBtn.style.height = `${newSize}px`;
+        sliderIcon.style.height = `${newSize}px`;
+    });
 
     let slideCounter = 0;
 
@@ -52,35 +67,36 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             slideCounter = 0;
         }
-
         checkSlideCounter();
-    }, 3000);
+    }, 5000);
 
     let checkSlideCounter = () => {
         for(let i=1; i<slider.length; i++) {
             if(slideCounter === i) {
-                slider[i].classList.add('sliderVisible');
-                slider[i].classList.remove('sliderInvisible');
+                slider[i].classList.add('slider-visible');
+                slider[i].classList.remove('slider-invisible');
             } else {
-                slider[i].classList.add('sliderInvisible');
-                slider[i].classList.remove('sliderVisible');
+                slider[i].classList.add('slider-invisible');
+                slider[i].classList.remove('slider-visible');
             }
         }
     }
-    console.log(slider.length);
+
     btnNext.addEventListener('click', () => {
-        if(slideCounter < slider.length-1) {
+        if(slideCounter < slider.length) {
             slideCounter += 1;
+        } else {
+            slideCounter = 1;
         }
-        console.log(slideCounter);
         checkSlideCounter();
     });
 
     btnPrev.addEventListener('click', () => {
         if(slideCounter > 0) {
             slideCounter -= 1;
+        } else {
+            slideCounter = slider.length-1;
         }
-        console.log(slideCounter);
         checkSlideCounter();
     });
 
