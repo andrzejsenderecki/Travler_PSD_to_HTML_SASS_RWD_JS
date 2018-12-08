@@ -1,5 +1,3 @@
-# Travler_PSD_to_HTML_SASS_RWD_JS
-
 <h2>Strona internetowa Travler</h2>
 
 Link do projektu:
