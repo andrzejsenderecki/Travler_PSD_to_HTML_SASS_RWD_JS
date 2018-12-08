@@ -1,4 +1,4 @@
-# travler_PSD_to_HTML_SASS_RWD_JS
+# Travler_PSD_to_HTML_SASS_RWD_JS
 
 <h2>Strona internetowa Travler</h2>
 
