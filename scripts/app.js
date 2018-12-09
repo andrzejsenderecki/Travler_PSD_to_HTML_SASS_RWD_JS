@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let nextSlideBtn = document.querySelector('.next-slide');
     let sliderIcon = document.querySelector('.slider-icon');
     let slideContainer = document.querySelector('.page-slide');
-    let slide = document.querySelector('.slider img');
+    let slide = document.querySelector('.slider-visible');
 
     let size = slide.offsetHeight;
     prevSlideBtn.style.height = `${size}px`;
