@@ -5,7 +5,7 @@ require('../scss/partials/_slider.scss');
 require('../scss/partials/_map_section.scss');
 require('../scss/partials/_laptop_section.scss');
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     // Responsive menu
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let nextSlideBtn = document.querySelector('.next-slide');
     let sliderIcon = document.querySelector('.slider-icon');
     let slideContainer = document.querySelector('.page-slide');
-    let slide = document.querySelector('.slider-visible');
+    let slide = document.querySelector('.slider img');
 
     let size = slide.offsetHeight;
     prevSlideBtn.style.height = `${size}px`;
