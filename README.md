@@ -6,9 +6,7 @@ Link do projektu:
 
 https://andrzejsenderecki.github.io/Travler_PSD_to_HTML_SASS_RWD_JS/
 
-Strona została wykonana na podstawie projektu graficznego przygotowanego w programie Photoshop i udostępnionego przez witrynę freebiesbug.com. Projekt graficzny został wykonany przez: blazrobar.com
-
-
+Strona została wykonana na podstawie gotowego projektu graficznego wykonanego w programie Photoshop. 
 
 <h4>Technologie wykorzystane w projekcie:</h4>
 
