@@ -17,20 +17,26 @@ html {
     margin: 0 auto;
 }
 
-.page-width {
+.page-nav {
     position: relative;
     width: 100%;
     background: $light_bg-color;
 }
 
-.page-slide-width {
+.page-slide {
     width: 100%;
     max-width: 1550px;
     margin: 0 auto;
+    height: 550px;
 }
 
-@media (min-width: 822px) {
-    .page-width {
+.page-map {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 847px) {
+    .page-nav {
         height: 120px;
     }
 }

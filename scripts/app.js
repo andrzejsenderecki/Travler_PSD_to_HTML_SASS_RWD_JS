@@ -2,6 +2,8 @@ require('../scss/modules/_variables.scss');
 require('../scss/partials/_main.scss');
 require('../scss/partials/_header.scss');
 require('../scss/partials/_slider.scss');
+require('../scss/partials/_map_section.scss');
+require('../scss/partials/_laptop_section.scss');
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -16,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuSection = document.querySelector('.navbar-menu');
     let logoSection = document.querySelector('.navbar-logo');
 
-    let mobile = window.matchMedia("(min-width: 822px)");
+    let mobile = window.matchMedia("(min-width: 847px)");
 
     let checkMobile = () => {
         if (mobile.matches) {
@@ -40,23 +42,26 @@ document.addEventListener("DOMContentLoaded", function () {
     //Slider
 
     let slider = document.querySelectorAll('.slider li');
-    let slide = document.querySelector('.slider img');
     let btnNext = document.querySelector('.next-slide');
     let btnPrev = document.querySelector('.prev-slide');
     let prevSlideBtn = document.querySelector('.prev-slide');
     let nextSlideBtn = document.querySelector('.next-slide');
     let sliderIcon = document.querySelector('.slider-icon');
+    let slideContainer = document.querySelector('.page-slide');
+    let slide = document.querySelector('.slider img');
 
     let size = slide.offsetHeight;
     prevSlideBtn.style.height = `${size}px`;
     nextSlideBtn.style.height = `${size}px`;
     sliderIcon.style.height = `${size}px`;
+    slideContainer.style.height = `${size}px`;
 
     window.addEventListener("resize", () => {
         let newSize = slide.offsetHeight;
         prevSlideBtn.style.height = `${newSize}px`;
         nextSlideBtn.style.height = `${newSize}px`;
         sliderIcon.style.height = `${newSize}px`;
+        slideContainer.style.height = `${newSize}px`;
     });
 
     let slideCounter = 0;

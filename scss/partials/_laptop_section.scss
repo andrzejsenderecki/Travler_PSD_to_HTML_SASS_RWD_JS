@@ -1,0 +1,52 @@
+.page-laptop {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    background: #222222;
+
+    img {
+        width: 97%;
+        padding-top: 5%;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 3.6rem;
+        color: #FFFFFF;
+        text-shadow: 0 0 3px #000000;
+        padding: 5px 10px 5px 10px;
+    }
+    p {
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 1.8rem;
+        color: #a161db;
+        text-shadow: 0 0 3px #000000;
+        padding: 0 10px 20px 10px;
+    }
+}
+
+@media (min-width: 660px) {
+
+    .page-laptop {
+        h2 {
+            position: absolute;
+            bottom: 10%;
+            padding: 0 0 10px 0;
+        }
+
+        p {
+            position: absolute;
+            bottom: 5%;
+            padding: 0;
+        }
+    }
+
+}

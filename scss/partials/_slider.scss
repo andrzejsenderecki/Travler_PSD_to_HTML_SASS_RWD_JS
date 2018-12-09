@@ -1,8 +1,23 @@
 .slider {
     position: relative;
+
     img {
         width: 100%;
         max-width: 1550px;
+    }
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+
+    i {
+        opacity: 0.6;
+        z-index: 2;
+        border: solid #FFFFFF;
+        border-width: 0 10px 10px 0;
+        padding: 20px;
     }
 }
 
@@ -16,14 +31,6 @@
     position: absolute;
     opacity: 0;
     transition: 0.5s all;
-}
-
-i {
-    opacity: 0.6;
-    z-index: 2;
-    border: solid #FFFFFF;
-    border-width: 0 10px 10px 0;
-    padding: 20px;
 }
 
 .prev-slide {
@@ -69,11 +76,11 @@ i {
     }
 }
 
-@media (min-width: 822px) {
+@media (min-width: 847px) {
     i {
         transition: 0.5s all;
     }
-    
+
     .prev-slide {
         &:hover {
             cursor: pointer;
@@ -97,7 +104,7 @@ i {
             transition: 0.5s all;
             &:hover {
                 cursor: pointer;
-                width: 15%;
+                width: 12%;
             }
         }
     }

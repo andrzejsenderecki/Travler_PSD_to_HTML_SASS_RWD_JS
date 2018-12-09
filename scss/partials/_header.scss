@@ -35,7 +35,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                padding: 50px 50px 20px 50px;
+                padding: 50px 20px 20px 20px;
                 position: relative;
                 font-family: 'PT Sans', sans-serif;
                 font-weight: 600;
@@ -53,26 +53,24 @@
 }
 
 .responsive-menu-btn {
-    width: 50px;
+    width: 40px;
     height: 20px;
     border: 0;
-    border-top: 7px solid #6017a3;
+    border-top: 5px solid #6017a3;
     position: relative;
-    transition: 0.3s transform linear;
     &::before, &::after {
         content: '';
         position: absolute;
         width: 100%;
-        border-top: 7px solid #6017a3;
-        transform: translateY(8px);
-        transition: 0.3s transform linear;
+        border-top: 5px solid #6017a3;
+        transform: translateY(6px);
     }
     &:after {
-        transform: translateY(23px);
+        transform: translateY(17px);
     }
 }
 
-@media (min-width: 822px) {
+@media (min-width: 847px) {
 
     .navbar {
         flex-direction: row;
@@ -106,7 +104,7 @@
                     border-right: 1px solid #d4d4d4;
                     transition: 0.2s;
                     &:hover {
-                        padding: 50px 50px 30px 50px;
+                        padding: 50px 20px 30px 20px;
                         transition: 0.2s;
                         background: #FFFFFF;
                         box-shadow: inset 10px -20px 0 -10px;
