@@ -5,8 +5,7 @@ require('../scss/partials/_slider.scss');
 require('../scss/partials/_map_section.scss');
 require('../scss/partials/_laptop_section.scss');
 
-document.addEventListener("DOMContentLoaded", () => {
-
+document.addEventListener('DOMContentLoaded', () => {
     // Responsive menu
 
     let menuBtnResponsive = document.createElement('div');
@@ -38,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
     mobile.addListener( function(mobile) {
         checkMobile();
     });
+});
 
+window.onload = () => {
     //Slider
 
     let slider = document.querySelectorAll('.slider li');
@@ -105,4 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         checkSlideCounter();
     });
 
-});
+    prevSlideBtn.classList.remove('slider-nav-invisible');
+    nextSlideBtn.classList.remove('slider-nav-invisible');
+    sliderIcon.classList.remove('slider-nav-invisible');
+}
