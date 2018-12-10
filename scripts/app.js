@@ -107,7 +107,5 @@ window.onload = () => {
         checkSlideCounter();
     });
 
-    prevSlideBtn.classList.remove('slider-nav-invisible');
-    nextSlideBtn.classList.remove('slider-nav-invisible');
-    sliderIcon.classList.remove('slider-nav-invisible');
+    slideContainer.classList.remove('slider-invisible');
 }
