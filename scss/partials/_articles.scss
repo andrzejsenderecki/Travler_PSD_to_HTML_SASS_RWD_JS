@@ -9,8 +9,7 @@
 
 .article-box {
     position: relative;
-    width: 460px;
-    min-height: 483px;
+    width: 90%;
     background: #FFFFFF;
     padding: 60px 50px 60px 50px;
     margin: 10px;
@@ -43,8 +42,7 @@
 }
 
 .article-box-max-width {
-    width: 460px;
-    min-height: 300px;
+    width: 90%;
 }
 
 .decoration-box {
@@ -81,6 +79,8 @@
     }
 
     .article-box {
+        width: 460px;
+        min-height: 483px;
         h2, h3, p {
             text-align: left;
         }
@@ -88,6 +88,7 @@
 
     .article-box-max-width {
         width: 100%;
+        min-height: 300px;
         margin-top: 25px;
     }
 }

@@ -44,6 +44,14 @@ html {
     justify-content: center;
 }
 
+.page-footer {
+    width: 100%;
+    background: #373737;
+    display: flex;
+    justify-content: center;
+    border-top: 20px solid #914dcf;
+}
+
 @media (min-width: 847px) {
     .page-nav {
         height: 120px;
