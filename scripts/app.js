@@ -4,6 +4,7 @@ require('../scss/partials/_header.scss');
 require('../scss/partials/_slider.scss');
 require('../scss/partials/_map_section.scss');
 require('../scss/partials/_laptop_section.scss');
+require('../scss/partials/_team_slider.scss');
 require('../scss/partials/_articles.scss');
 require('../scss/partials/_footer.scss');
 
