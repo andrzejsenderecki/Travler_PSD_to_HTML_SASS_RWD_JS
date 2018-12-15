@@ -1,4 +1,8 @@
 .page-team-slider {
+    min-height: 480px;
+    height: auto;
+    position: relative;
+
     h2 {
         font-family: 'PT Sans', sans-serif;
         font-weight: lighter;
@@ -19,6 +23,7 @@
 }
 
 .team-slider {
+    position: relative;
     ul {
         li {
             display: flex;
@@ -46,10 +51,77 @@
                         font-size: 1.5rem;
                         color: #717171;
                         padding-left: 20px;
-                        padding-bottom: 20px;
+                        padding-bottom: 30px;
                     }
                 }
             }
+        }
+    }
+}
+
+.team-slide-position {
+    position: absolute;
+    top: 0;
+}
+
+.team-slider-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.circle-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #979797;
+    margin: 30px;
+}
+
+.team-slider-invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.team-slider-visible {
+    opacity: 1;
+    transition: 0.5s all;
+    transform: rotate(0deg);
+}
+
+.horizontal-line-left {
+    display: none;
+}
+
+.horizontal-line-right {
+    display: none;
+}
+
+@media (min-width: 968px) {
+
+    .horizontal-line-left {
+        position: absolute;
+        display: block;
+        top: 45px;
+        left: 70px;
+    }
+
+    .horizontal-line-right {
+        position: absolute;
+        display: block;
+        top: 45px;
+        right: 70px;
+    }
+
+    .circle-btn {
+        width: 15px;
+        height: 15px;
+        margin: 2px;
+        transition: 0.3s all;
+        &:hover {
+            background: #8f33c4;
+            cursor: pointer;
         }
     }
 }

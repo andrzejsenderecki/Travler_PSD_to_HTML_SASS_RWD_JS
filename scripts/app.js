@@ -40,10 +40,35 @@ document.addEventListener('DOMContentLoaded', () => {
     mobile.addListener( function(mobile) {
         checkMobile();
     });
+
+    // Team slider
+
+    let circlesBtn = document.querySelectorAll('.circle-btn');
+    let teamSlides = document.querySelector('.team-slider').children;
+
+    let teamSliderCounter = 0;
+
+    for(let i=0; i<circlesBtn.length; i++) {
+        circlesBtn[i].addEventListener('click', () => {
+
+            teamSliderCounter = i;
+
+            for(let i=0; i<teamSlides.length; i++) {
+                if(i === teamSliderCounter) {
+                    teamSlides[i].classList.add('team-slider-visible');
+                    teamSlides[i].classList.remove('team-slider-invisible');
+                } else {
+                    teamSlides[i].classList.remove('team-slider-visible');
+                    teamSlides[i].classList.add('team-slider-invisible');
+                }
+            }
+        })
+    }
+
 });
 
 window.onload = () => {
-    //Slider
+    // Slider
 
     let slider = document.querySelectorAll('.slider li');
     let btnNext = document.querySelector('.next-slide');
