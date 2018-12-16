@@ -65,7 +65,47 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-});
+    // jQuery - animacje
+    
+    $(window).on('scroll', () => {
+        let $scrollWindow = $(window).scrollTop();
+        let $windowHeight = $(window).height();
+
+        // Laptop Section
+        let $laptopImage = $('.page-laptop img');
+        let $scrollLaptop = $('.page-laptop img').offset().top;
+
+        if($scrollWindow > $scrollLaptop-$windowHeight*0.5) {
+            $laptopImage.removeClass('scroll-animate-laptop');
+        } else {
+            $laptopImage.addClass('scroll-animate-laptop');
+        }
+
+        // Team Section
+        let $pageTeamSlide = $('.team-slider');
+        let $scrollTeamSlider = $('.page-team').offset().top;
+
+        if($scrollWindow > $scrollTeamSlider-$windowHeight*0.5) {
+            $pageTeamSlide.removeClass('scroll-animate-team');
+        } else {
+            $pageTeamSlide.addClass('scroll-animate-team');
+        }
+
+        // Articles Section
+        let $articleBoxLeft = $('.article-box').eq(0);
+        let $articleBoxRight = $('.article-box').eq(1);
+        let $pageArticles = $('.page-articles');
+        let $scrollArticles = $('.page-articles').offset().top;
+
+        if($scrollWindow > $scrollArticles-$windowHeight*0.5) {
+            $articleBoxLeft.removeClass('scroll-animate-left');
+            $articleBoxRight.removeClass('scroll-animate-right');
+        } else {
+            $articleBoxLeft.addClass('scroll-animate-left');
+            $articleBoxRight.addClass('scroll-animate-right');
+        }
+    })
+;});
 
 window.onload = () => {
     // Slider

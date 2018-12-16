@@ -13,6 +13,7 @@
     background: #FFFFFF;
     padding: 60px 50px 60px 50px;
     margin: 10px;
+    transition: 2s all;
 
     h2 {
         font-family: 'PT Sans', sans-serif;
@@ -71,6 +72,14 @@
     height: 3px;
     background: #FFFFFF;
     transform: rotate(90deg);
+}
+
+.scroll-animate-left {
+    transform: translateX(-50px);
+}
+
+.scroll-animate-right {
+    transform: translateX(50px);
 }
 
 @media (min-width: 960px) {

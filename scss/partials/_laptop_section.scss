@@ -6,10 +6,13 @@
     align-items: flex-end;
     width: 100%;
     background: #222222;
+    transition: 4s all;
 
     img {
         width: 97%;
         padding-top: 5%;
+
+        transition: 2s all;
     }
 
     h2 {
@@ -31,6 +34,10 @@
         text-shadow: 0 0 3px #000000;
         padding: 0 10px 20px 10px;
     }
+}
+
+.scroll-animate-laptop {
+    opacity: 0;
 }
 
 @media (min-width: 660px) {

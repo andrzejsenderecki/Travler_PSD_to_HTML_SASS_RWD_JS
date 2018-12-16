@@ -24,6 +24,7 @@
 
 .team-slider {
     position: relative;
+    transition: 2s all;
     ul {
         li {
             display: flex;
@@ -81,13 +82,14 @@
 .team-slider-invisible {
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s all;
+    transition: 0.3s all;
+    transform: translateX(50px);
 }
 
 .team-slider-visible {
     opacity: 1;
-    transition: 0.5s all;
-    transform: rotate(0deg);
+    transition: 1s all;
+    transform: translateX(0);
 }
 
 .horizontal-line-left {
@@ -96,6 +98,11 @@
 
 .horizontal-line-right {
     display: none;
+}
+
+.scroll-animate-team {
+    opacity: 0;
+    transform: translateX(50px);
 }
 
 @media (min-width: 968px) {
