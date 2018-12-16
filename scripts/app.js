@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let $pageArticles = $('.page-articles');
         let $scrollArticles = $('.page-articles').offset().top;
 
-        if($scrollWindow > $scrollArticles-$windowHeight*0.5) {
+        if($scrollWindow > $scrollArticles-$windowHeight*0.8) {
             $articleBoxLeft.removeClass('scroll-animate-left');
             $articleBoxRight.removeClass('scroll-animate-right');
         } else {
