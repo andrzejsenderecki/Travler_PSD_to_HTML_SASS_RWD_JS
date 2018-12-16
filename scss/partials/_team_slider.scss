@@ -83,7 +83,6 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.3s all;
-    transform: translateX(50px);
 }
 
 .team-slider-visible {
@@ -102,7 +101,6 @@
 
 .scroll-animate-team {
     opacity: 0;
-    transform: translateX(50px);
 }
 
 @media (min-width: 968px) {

@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // jQuery - animacje
-    
+
     $(window).on('scroll', () => {
         let $scrollWindow = $(window).scrollTop();
         let $windowHeight = $(window).height();

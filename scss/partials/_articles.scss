@@ -13,7 +13,6 @@
     background: #FFFFFF;
     padding: 60px 50px 60px 50px;
     margin: 10px;
-    transition: 2s all;
 
     h2 {
         font-family: 'PT Sans', sans-serif;
@@ -74,14 +73,6 @@
     transform: rotate(90deg);
 }
 
-.scroll-animate-left {
-    transform: translateX(-50px);
-}
-
-.scroll-animate-right {
-    transform: translateX(50px);
-}
-
 @media (min-width: 960px) {
     .articles-section {
         justify-content: space-between;
@@ -90,6 +81,7 @@
     .article-box {
         width: 460px;
         min-height: 483px;
+        transition: 2s all;
         h2, h3, p {
             text-align: left;
         }
@@ -99,5 +91,13 @@
         width: 100%;
         min-height: 300px;
         margin-top: 25px;
+    }
+
+    .scroll-animate-left {
+        transform: translateX(-40px);
+    }
+
+    .scroll-animate-right {
+        transform: translateX(40px);
     }
 }
