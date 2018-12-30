@@ -9,6 +9,7 @@ Strona została wykonana na podstawie gotowego projektu graficznego wykonanego w
 <h4>Technologie wykorzystane w projekcie:</h4>
 
 - JavaScript
+- jQuery
 - HTML
 - CSS
 - SASS
